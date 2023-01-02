@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 
 const app = express();
 
-dotenv.config({ path: '.env' });
+dotenv.config();
 
 app.use(bodyParser.json({limit: "30mb", extended: true})); //Because we need to upload image
 app.use(bodyParser.urlencoded({limit: "30mb", extended: true}));
